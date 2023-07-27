@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 7</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="appList d-flex flex-column justify-content-center">
+      <h2 class="text-center display-4 text-primary">App de Compras</h2>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <form action="" class="col-lg-4 col-12">
+            <div class="mb-3">
+              <label for="producto" class="form-label">Producto: </label>
+              <input
+                type="text"
+                id="input-producto"
+                class="form-control mb-3"
+              />
+              <input
+                type="button"
+                id="btn-agregar"
+                class="btn btn-primary"
+                value="Agregar"
+              />
+            </div>
+          </form>
+        </div>
+        <hr />
+
+        <div class="row d-flex flex-column align-items-center mt-4">
+          <div class="col-lg-6 col-12">
+            <button class="btn btn-danger float-end" id="btn-limpiar">
+              Limpiar Lista
+            </button>
+          </div>
+          <h3 class="display-6 text-success text-center">Lista de productos</h3>
+          <div
+            id="alerta"
+            class="alert alert-danger col-lg-6 col-12"
+            role="alert"
+          >
+            No existen productos!
+          </div>
+
+          <ul id="lista" class="list-group col-lg-6 col-12"></ul>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
